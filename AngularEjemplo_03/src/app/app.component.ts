@@ -16,7 +16,5 @@ export class AppComponent {
     titulo:'spiderman',
     fechalanzamiento:new Date(),
   }
-
-
 }
 
