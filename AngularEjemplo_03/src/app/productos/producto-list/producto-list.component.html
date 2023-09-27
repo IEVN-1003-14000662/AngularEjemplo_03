@@ -35,8 +35,10 @@
                             <th>Imagen</th>
                     </tr>
                 </thead>
+
+
                 <tbody>
-                    <tr *ngFor="let producto of productos">
+                    <tr *ngFor="let producto of productos | productoFilter:listFilter">
                         <td></td>
                         <td>{{producto.Modelo|uppercase}}</td>
                         <td>{{producto.Descripcion}}</td>
