@@ -1,68 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <div class="main-container">
+        <div class="titulo">
+            <h1>Cinepolis</h1>
+            
+        </div>
+        <div class="container">
+            <div class="Entrada">
+                
+                <h1>Entradas</h1>
+                <div>
+                    <p>
+                        <label id="example-radio-group-label"><h5>Nombre:</h5></label>
+                        <input matInput [(ngModel)]="nombre" type="String" placeholder="CCompradores" matInput placeholder=" ">
+                    </p>
+                </div>
+                <div>
+                    <label id="example-radio-group-label"><h5>Cantidad <br> compradores:</h5></label>
+                    <mat-form-field apariencia="rellenar">
+                        <mat-label>  </mat-label>
+                        <input matInput [(ngModel)]="personas" type="number" placeholder="CCompradores" matInput placeholder=" ">
+                        <mat-icon matSuffix>  </mat-icon>
+                    </mat-form-field>
+                </div>
 
-<body>
-
-    <div class="titulo">
-        <h1>Cinepolis</h1>
-    </div>
-
-    <div class="container">
-
-        <div class="Entrada">
-            <h1>Entradas</h1>
-            <div>
-                <label for="name" class="col-sm-2 col-form-label">Nombre</label>
-                <input type="string" placeholder=" ">
-            </div>
-            <div>
-                <label for="cantidad" class="col-sm-2 col-form-label">Cantidad compradores</label>
-                <input matInput [(ngModel)]="compradores" type="number" placeholder="CCompradores">
-            </div>
-            <h3> Tarjeta Cinecom</h3>
-            <div>
 
                 <div class="form-check">
+                    <input class="form-check-input" name="operacion" value="true" [(ngModel)]="tarjetaCineCoxd" type="radio" id="flex">
                     <label class="form-check-label" for="flexRadioDefault">
                         Si
                     </label>
-                    <input class="form-check-input" name="tarjeta" value="terjet" type="radio" id="flex">
                 </div>
-
                 <div class="form-check">
+                    <input class="form-check-input" name="operacion" value="false" [(ngModel)]="tarjetaCineCoxd" type="radio" id="flex">
                     <label class="form-check-label" for="flexRadioDefault">
                         No
                     </label>
-                    <input class="form-check-input" name="tarjeta" value="tarjet" type="radio" id="flex">
+                </div>
+                <div>
+                    <label id="example-radio-group-label"><h5>Cantidad de boletos:</h5></label>
+                    <mat-form-field apariencia="rellenar">
+                        <mat-label>  </mat-label>
+                        <input matInput [(ngModel)]="CBoletos" type="number" placeholder="CCompradores" matInput placeholder=" ">
+                        <mat-icon matSuffix>  </mat-icon>
+                    </mat-form-field>
+                    
                 </div>
             </div>
-            <div>
-                <label for="boletos" class="col-sm-2 col-form-label">Cantidad compradores</label>
-                <input matInput [(ngModel)]="CBoletos" type="number" placeholder="CCompradores">
+            <br>
+
+            <div class="Salida">
+                <h1>Salidas</h1>
+                <label id="example-radio-group-label"><h5>Valor a pagar: {{precioFinal}}</h5></label>
+                <h3>{{mensaje}}</h3>
+                    <mat-form-field apariencia="rellenar">
+                        <mat-label>  </mat-label>
+                        <mat-icon matSuffix>  </mat-icon>
+                    </mat-form-field>
             </div>
         </div>
-        <br>
-        <div class="Salida">
-            <h1>Salidas</h1>
-            <label for="pagar" class="col-sm-2 col-form-label">Valor a pagar</label>
-            <input matInput [(ngModel)]="pagar" type="number" placeholder="CCompradores">
-        </div>
+        <div class="containerAccion">
+            <div class="Accion">
+                <h1>Accion</h1>
+                <button mat-raised-button color="primary" (click)="operacion()"> <h2>Procesar</h2> </button>
+                <button mat-raised-button color="primary"  (click)="limpiar()"> <h2>Salir</h2> </button>
 
-        <div class="Accion">
-            <h1>Accion</h1>
-            <button mat-raised-button color="primary" (click)="operacion()">Procesar</button>
-            <button mat-raised-button color="primary" (click)="limpiar()">Salir</button>
-            <button></button>
-        </div>
+            </div>
 
+        </div>
     </div>
-
-</body>
-
-</html>

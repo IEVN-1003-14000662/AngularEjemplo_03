@@ -1,25 +1,118 @@
-body {
-    background-image: url("https://i1.wp.com/www.lineup.mx/wp-content/uploads/2017/09/Cinepolis.jpg?fit=1664%2C1200&ssl=1");
-    width: 100%;
-    height: 100%;
-}   
+html,
+.main-container {
+
+    background-image: url("https://www.paredro.com/wp-content/uploads/2019/04/LogoCinepolis.jpg");
+    background-position: 55%;
+    background-size:75%;
+    background-size:cover;
+    height: 144%;
+    width: 99.8%;
+}
 
 .titulo {
+    font-size: xx-large;
+    width: 10%;
+    height: 7%;
     text-align: center;
+    margin: 2%;
+    padding: 3px 10px;
+    border: PowderBlue 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0, 6);
+    background-color:rgba(247, 7, 11, 0.321);
+    opacity: 1;
+    
+    
 }
 
 label,
 h1,
-h2,
-h3,
-input {
-    color: aliceblue;
+h4,
+h5,
+mat-hint {
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: xx-large;
+    font: oblique bold 125% cursive;
+  
+}
+
+h2{
+    color: rgb(255, 255, 255);
+}
+
+.mat-mdc-radio-button~.mat-mdc-radio-button {
+    margin-left: 16px;
+    color: rgb(255, 255, 255);
+
 }
 
 .Entrada {
-    width: 50%;
+    font-size: large;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    text-align: center;
+    margin: 2%;
+    padding: 3px 10px;
+    border: PowderBlue 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    opacity: 1;
+    ;
+}
+
+
+
+.form-check {
+    align-items: center;
 }
 
 .Salida {
-    width: 50%;
+    font-size: large;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 2%;
+    padding: 3px 10px;
+    border: PowderBlue 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.Accion {
+    text-align: center;
+    margin: 2%;
+    padding: 3px 10px;
+    border: PowderBlue 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size: large;
+    width: 15%;
+    opacity: 1;
+}
+
+.Accion,.Entrada,.titulo,.Salida{
+    background-color:rgba(122, 101, 102, 0.626);
+}
+
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    display: flex;
+    
 }
