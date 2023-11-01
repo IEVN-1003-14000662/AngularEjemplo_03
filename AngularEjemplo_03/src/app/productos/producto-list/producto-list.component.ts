@@ -18,7 +18,6 @@ export class ProductoListComponent {
     }
 
   productos:IProductos[]=[
-
     
     {
       "Modelo":"sentra",

@@ -52,7 +52,6 @@ export class CinepolisComponent {
         this.mensaje='No puedes comprar mas boletos';
       }
   }
-
   limpiar(){
     
     this.mensaje=" ";
